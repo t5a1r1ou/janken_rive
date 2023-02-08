@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>じゃんけんゲーム</title>
+    <link
+      href="https://fonts.googleapis.com/earlyaccess/nicomoji.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script src="https://unpkg.com/@rive-app/canvas@1.0.98"></script>
+  </head>
+  <body>
+    <main class="contents__wrapper">
+      <h1 class="contents__title">じゃんけんゲーム</h1>
+      <div class="cardsContainer">
+        <div class="card">
+          <p class="card__title">じゃんけん...</p>
+          <div class="card__wrapper">
+            <div class="cardBox cardBox--you">
+              <p class="cardBox__title cardBox__title--you">あなた</p>
+              <div class="cardBox__imgContainer js-canvas-container">
+                <canvas
+                  id="canvas"
+                  class="cardBox__canvas js-canvas-you"
+                ></canvas>
+                <canvas
+                  id="canvas"
+                  class="cardBox__canvas js-canvas-you"
+                ></canvas>
+                <canvas
+                  id="canvas"
+                  class="cardBox__canvas js-canvas-you"
+                ></canvas>
+                <canvas
+                  id="canvas"
+                  class="cardBox__canvas js-canvas-you"
+                ></canvas>
+                <div class="cardBox__blank"></div>
+              </div>
+            </div>
+            <div class="cardBox cardBox--cpu">
+              <p class="cardBox__title cardBox__title--cpu">CPU</p>
+              <div class="cardBox__imgContainer">
+                <canvas
+                  id="canvas"
+                  class="cardBox__canvas js-canvas-cpu"
+                ></canvas>
+                <canvas
+                  id="canvas"
+                  class="cardBox__canvas js-canvas-cpu"
+                ></canvas>
+                <canvas
+                  id="canvas"
+                  class="cardBox__canvas js-canvas-cpu"
+                ></canvas>
+                <canvas
+                  id="canvas"
+                  class="cardBox__canvas js-canvas-cpu"
+                ></canvas>
+                <div class="cardBox__blank"></div>
+              </div>
+            </div>
+          </div>
+          <p class="card__result"></p>
+        </div>
+      </div>
+      <nav class="navigation">
+        <ul class="navigation__list navigation__list--hands">
+          <li>
+            <button class="navigation__button navigation__button--rock">
+              グー
+            </button>
+          </li>
+          <li>
+            <button class="navigation__button navigation__button--scissors">
+              チョキ
+            </button>
+          </li>
+          <li>
+            <button class="navigation__button navigation__button--paper">
+              パー
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </main>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>

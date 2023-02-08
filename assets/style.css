@@ -1,0 +1,195 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #060819;
+  font-feature-settings: "palt";
+  font-family: "Nico Moji";
+}
+
+.contents__wrapper {
+  width: 100%;
+  padding: 15px 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .contents__wrapper {
+    padding: 32px 160px;
+  }
+}
+
+.contents__title {
+  margin: 8px auto;
+  color: #fff;
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .contents__title {
+    margin-bottom: 40px;
+    font-size: 4rem;
+  }
+}
+
+.cardsContainer {
+  margin: 0 calc(50% - 50vw);
+  width: 100vw;
+  overflow: hidden;
+}
+
+.cardsContainer__mask {
+  display: flex;
+  /* transition-property: transform;
+  transition-duration: 1500ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+}
+
+.card {
+  width: calc(100% - 80px);
+  min-width: calc(100% - 80px);
+  padding: 32px;
+  margin: 0 40px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    width: calc(100% - 320px);
+    min-width: calc(100% - 320px);
+    padding: 48px;
+    margin: 0 160px;
+  }
+}
+
+.card__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 100%;
+  flex-grow: 0;
+}
+
+.cardBox {
+  width: 50%;
+  height: 100%;
+  text-align: center;
+}
+
+.cardBox__title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 768px) {
+  .cardBox__title {
+    font-size: 3rem;
+  }
+}
+
+.cardBox__title--you {
+  color: rgb(42, 16, 243);
+}
+
+.cardBox__title--cpu {
+  color: rgb(243, 16, 103);
+}
+
+.cardBox__thinking {
+  font-size: 20rem;
+  height: 100%;
+}
+
+.cardBox__imgContainer {
+  width: 90%;
+  margin: 20px auto 0;
+}
+
+@media screen and (min-width: 768px) {
+  .cardBox__imgContainer {
+    position: relative;
+    width: 60%;
+    margin: 40px auto 0;
+  }
+}
+
+.cardBox__imgContainer > img {
+  width: 100%;
+}
+
+.cardBox__canvas {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.cardBox__blank {
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+}
+
+.cardBox__hand {
+  margin-top: 20px;
+  font-size: 1.8rem;
+}
+
+@media screen and (min-width: 768px) {
+  .cardBox__hand {
+    font-size: 2.5rem;
+  }
+}
+
+.card__title {
+  margin-bottom: 8px;
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .card__title {
+    margin-bottom: 20px;
+    font-size: 4rem;
+  }
+}
+
+.card__result {
+  margin-top: 30px;
+  font-size: 3rem;
+}
+
+@media screen and (min-width: 768px) {
+  .card__result {
+    font-size: 6rem;
+  }
+}
+
+.navigation__list {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.navigation__button {
+  display: block;
+  font-size: 2.4rem;
+  padding: 8px;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation__button {
+    font-size: 3.2rem;
+    padding: 12px 16px;
+    border: none;
+  }
+
+  .navigation__button:hover {
+    text-decoration: underline;
+  }
+}
